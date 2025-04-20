@@ -5,10 +5,10 @@ import styles from './game.module.css';
 function Game() {
     return (
         <div className={styles.game}>
-            <h1>Тренировка</h1>
+            <h1 className={styles.game__title}>Тренировка</h1>
             <Card />
         </div>
     );
-};
+}
 
 export default Game;

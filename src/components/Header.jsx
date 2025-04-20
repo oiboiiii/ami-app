@@ -5,13 +5,13 @@ import styles from "./header.module.css";
 function Header() {
     return (
         <header className={styles.header}>
-            <p>Карточки <br />со словами <br /><b>французский</b></p>
-            <nav>
-                <ul>
-                    <li>
+            <p className={styles.header__title}>Карточки <br />со словами <br /><b>французский</b></p>
+            <nav >
+                <ul className={styles.header__nav}>
+                    <li className={styles.header__link}>
                         <Link to="/">Главная</Link>
                     </li>
-                    <li>
+                    <li className={styles.header__link}>
                         <Link to="/game">Тренировка</Link>
                     </li>
                 </ul>

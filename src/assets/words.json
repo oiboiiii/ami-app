@@ -1,0 +1,447 @@
+[
+    {
+      "id": 1,
+      "word": "bonjour",
+      "transcription": "/bɔ̃ʒuʁ/",
+      "translation": "Здравствуй/Привет",
+      "topic": "общение"
+    },
+    {
+      "id": 2,
+      "word": "au revoir",
+      "transcription": "/o ʁəvwaʁ/",
+      "translation": "До свидания/Пока",
+      "topic": "общение"
+    },
+    {
+      "id": 3,
+      "word": "merci",
+      "transcription": "/mɛʁsi/",
+      "translation": "Спасибо",
+      "topic": "общение"
+    },
+    {
+      "id": 4,
+      "word": "s'il vous plaît",
+      "transcription": "/sil vu plɛ/",
+      "translation": "Пожалуйста",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 5,
+      "word": "oui",
+      "transcription": "/wi/",
+      "translation": "Да",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "основы"
+    },
+    {
+      "id": 6,
+      "word": "non",
+      "transcription": "/nɔ̃/",
+      "translation": "Нет",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "основы"
+    },
+    {
+      "id": 7,
+      "word": "excusez-moi",
+      "transcription": "/ɛkskyze mwa/",
+      "translation": "Извините",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 8,
+      "word": "je ne comprends pas",
+      "transcription": "/ʒə nə kɔ̃pʁɑ̃ pa/",
+      "translation": "Я не понимаю",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 9,
+      "word": "parlez-vous anglais ?",
+      "transcription": "/paʁle vu ɑ̃ɡlɛ/",
+      "translation": "Вы говорите по-английски?",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 10,
+      "word": "je suis désolé",
+      "transcription": "/ʒə sɥi dezɔle/",
+      "translation": "Мне жаль",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 11,
+      "word": "comment ça va ?",
+      "transcription": "/kɔmɑ̃ sa va/",
+      "translation": "Как дела?",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 12,
+      "word": "ça va bien",
+      "transcription": "/sa va bjɛ̃/",
+      "translation": "Всё хорошо",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 13,
+      "word": "et vous ?",
+      "transcription": "/e vu/",
+      "translation": "А у вас?",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 14,
+      "word": "bienvenue",
+      "transcription": "/bjɛ̃vənɥ/",
+      "translation": "Добро пожаловать",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 15,
+      "word": "je m’appelle...",
+      "transcription": "/ʒə mapɛl/",
+      "translation": "Меня зовут...",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 16,
+      "word": "enchanté",
+      "transcription": "/ɑ̃ʃɑ̃te/",
+      "translation": "Очень приятно",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 17,
+      "word": "où est...?",
+      "transcription": "/u ɛ/",
+      "translation": "Где находится...?",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 18,
+      "word": "combien ça coûte ?",
+      "transcription": "/kɔ̃bjɛ̃ sa kut/",
+      "translation": "Сколько это стоит?",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 19,
+      "word": "je voudrais...",
+      "transcription": "/ʒə vudʁɛ/",
+      "translation": "Я бы хотел(а)...",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "общение"
+    },
+    {
+      "id": 20,
+      "word": "l’addition, s’il vous plaît",
+      "transcription": "/ladisjɔ̃ sil vu plɛ/",
+      "translation": "Счёт, пожалуйста",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "еда и напитки"
+    },
+    {
+      "id": 21,
+      "word": "toilettes",
+      "transcription": "/twalɛt/",
+      "translation": "Туалет",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "места"
+    },
+    {
+      "id": 22,
+      "word": "eau",
+      "transcription": "/o/",
+      "translation": "Вода",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "еда и напитки"
+    },
+    {
+      "id": 23,
+      "word": "pain",
+      "transcription": "/pɛ̃/",
+      "translation": "Хлеб",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "еда и напитки"
+    },
+    {
+      "id": 24,
+      "word": "fromage",
+      "transcription": "/fʁɔmaʒ/",
+      "translation": "Сыр",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "еда и напитки"
+    },
+    {
+      "id": 25,
+      "word": "vin",
+      "transcription": "/vɛ̃/",
+      "translation": "Вино",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "еда и напитки"
+    },
+    {
+      "id": 26,
+      "word": "chien",
+      "transcription": "/ʃjɛ̃/",
+      "translation": "Собака",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "животные и природа"
+    },
+    {
+      "id": 27,
+      "word": "chat",
+      "transcription": "/ʃa/",
+      "translation": "Кот",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "животные и природа"
+    },
+    {
+      "id": 28,
+      "word": "maison",
+      "transcription": "/mɛzɔ̃/",
+      "translation": "Дом",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "места"
+    },
+    {
+      "id": 29,
+      "word": "école",
+      "transcription": "/ekɔl/",
+      "translation": "Школа",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "места"
+    },
+    {
+      "id": 30,
+      "word": "travail",
+      "transcription": "/tʁavaj/",
+      "translation": "Работа",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "места"
+    },
+    {
+      "id": 31,
+      "word": "ami",
+      "transcription": "/ami/",
+      "translation": "Друг",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "семья и люди"
+    },
+    {
+      "id": 32,
+      "word": "famille",
+      "transcription": "/famij/",
+      "translation": "Семья",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "семья и люди"
+    },
+    {
+      "id": 33,
+      "word": "fille",
+      "transcription": "/fij/",
+      "translation": "Дочь / Девочка",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "семья и люди"
+    },
+    {
+      "id": 34,
+      "word": "fils",
+      "transcription": "/fis/",
+      "translation": "Сын",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "семья и люди"
+    },
+    {
+      "id": 35,
+      "word": "mère",
+      "transcription": "/mɛʁ/",
+      "translation": "Мама",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "семья и люди"
+    },
+    {
+      "id": 36,
+      "word": "père",
+      "transcription": "/pɛʁ/",
+      "translation": "Папа",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "семья и люди"
+    },
+    {
+      "id": 37,
+      "word": "heure",
+      "transcription": "/œʁ/",
+      "translation": "Час / Время",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "время"
+    },
+    {
+      "id": 38,
+      "word": "aujourd’hui",
+      "transcription": "/oʒuʁdɥi/",
+      "translation": "Сегодня",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "время"
+    },
+    {
+      "id": 39,
+      "word": "demain",
+      "transcription": "/dəmɛ̃/",
+      "translation": "Завтра",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "время"
+    },
+    {
+      "id": 40,
+      "word": "hier",
+      "transcription": "/jɛʁ/",
+      "translation": "Вчера",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "время"
+    },
+    {
+      "id": 41,
+      "word": "matin",
+      "transcription": "/matɛ̃/",
+      "translation": "Утро",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "время"
+    },
+    {
+      "id": 42,
+      "word": "soir",
+      "transcription": "/swaʁ/",
+      "translation": "Вечер",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "время"
+    },
+    {
+      "id": 43,
+      "word": "nuit",
+      "transcription": "/nɥi/",
+      "translation": "Ночь",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "время"
+    },
+    {
+      "id": 44,
+      "word": "soleil",
+      "transcription": "/sɔlɛj/",
+      "translation": "Солнце",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "животные и природа"
+    },
+    {
+      "id": 45,
+      "word": "lune",
+      "transcription": "/lyn/",
+      "translation": "Луна",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "животные и природа"
+    },
+    {
+      "id": 46,
+      "word": "pluie",
+      "transcription": "/plɥi/",
+      "translation": "Дождь",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "животные и природа"
+    },
+    {
+      "id": 47,
+      "word": "neige",
+      "transcription": "/nɛʒ/",
+      "translation": "Снег",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "животные и природа"
+    },
+    {
+      "id": 48,
+      "word": "chaud",
+      "transcription": "/ʃo/",
+      "translation": "Жарко",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "животные и природа"
+    },
+    {
+      "id": 49,
+      "word": "froid",
+      "transcription": "/fʁwa/",
+      "translation": "Холодно",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "животные и природа"
+    },
+    {
+      "id": 50,
+      "word": "heureux",
+      "transcription": "/øʁø/",
+      "translation": "Счастливый",
+      "isEditing": false,
+      "isSelected": false,
+      "topic": "эмоции"
+    }
+  ]
+

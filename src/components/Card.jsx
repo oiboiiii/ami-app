@@ -4,15 +4,19 @@ import styles from './card.module.css';
 function Card() {
     return (
         <div className={styles.card}>
-            <p>1/12</p>
-            <h3>Mon ami</h3>
-            <p>[mon ami]</p>
-            <p>мой друг</p>
-            <button>знаю</button>
-            <button>не знаю</button>
-            <p>Категория</p>
+            <p className={'styles.card-number'}>1/12</p>
+            <div className={'styles.card-text-area'}>
+            <h3 className={'styles.card-word'}>Mon ami</h3>
+            <p className={'styles.card-transcription'}>[mon ami]</p>
+            <p className={'styles.card-translate'}>мой друг</p>
+            </div>
+            <div className={'styles.card-button'}>
+            <button className={'styles.card-button--known'}>знаю</button>
+            <button className={'styles.card-button--unknown'}>не знаю</button>
+            </div>
+            <p className={'styles.card-category'}>Категория</p>
         </div>
     );
-};
+}
 
 export default Card;

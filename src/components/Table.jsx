@@ -1,20 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaCheck, FaTrash } from 'react-icons/fa';
 import styles from './table.module.css';
+import wordsData from '../assets/words.json';
 
 function Table() {
-    const [words, setWords] = useState([
-        { id: 1, word: 'bonjour', transcription: '/bɔ̃ʒuʁ/', translation: 'Здравствуй/Привет', isEditing: false, isSelected: false },
-        { id: 2, word: 'au revoir', transcription: '/o ʁəvwaʁ/', translation: 'До свидания/Пока', isEditing: false, isSelected: false },
-        { id: 3, word: 'merci', transcription: '/mɛʁsi/', translation: 'Спасибо', isEditing: false, isSelected: false },
-        { id: 4, word: "s'il vous plaît", transcription: '/s‿ilvuˈplɛ/', translation: 'Спасибо', isEditing: false, isSelected: false }
-    ]);
-
+    const [words, setWords] = useState([]);
     const [isEditingAll, setIsEditingAll] = useState(false);
     const [showActions, setShowActions] = useState(false);
 
+    useEffect(() => {
+        setWords(wordsData.map(word => ({ ...word})));
+    }, []);
+
     const handleInputChange = (e, id, field) => {
-        const newWords = words.map(word => word.id === id ? { ...word, [field]: e.target.value } : word);
+        let value = e.target.value;
+        if (field === 'transcription' && value && !value.startsWith('//')) {
+            value = `//${value}//`;
+        }
+        const newWords = words.map(word => word.id === id ? { ...word, [field]: value } : word);
         setWords(newWords);
     };
 
@@ -36,7 +39,14 @@ function Table() {
     };
 
     const addWord = () => {
-        const newWord = { id: Date.now(), nickname: '', firstname: '', lastname: '', isEditing: true, isSelected: false };
+        const newWord = {
+            id: Date.now(),
+            word: '',
+            transcription: '//',
+            translation: '',
+            isEditing: true,
+            isSelected: false
+        };
         setWords([...words, newWord]);
     };
 
@@ -52,52 +62,6 @@ function Table() {
 
     return (
         <div className={styles.tableContainer}>
-            <table className={styles.table}>
-                <thead>
-                    <tr>
-                        <th>Select</th>
-                        <th>#</th>
-                        <th>WORD</th>
-                        <th>TRANSCRIPTION</th>
-                        <th>TRANSLATION</th>
-                        {showActions && <th>Actions</th>}
-                    </tr>
-                </thead>
-                <tbody>
-                    {words.map((word, index) => (
-                        <tr key={word.id}>
-                            <td>
-                                <input type="checkbox" checked={word.isSelected} onChange={() => toggleSelect(word.id)} />
-                            </td>
-                            <td>{index + 1}</td>
-                            {['word', 'transcription', 'translation'].map(field => (
-                                <td key={field}>
-                                    {word.isEditing ? (
-                                        <input
-                                            type="text"
-                                            value={word[field]}
-                                            onChange={(e) => handleInputChange(e, word.id, field)}
-                                            className={styles.input}
-                                        />
-                                    ) : (
-                                        word[field]
-                                    )}
-                                </td>
-                            ))}
-                            {showActions && (
-                                <td>
-                                    <button onClick={() => toggleEdit(word.id)} className={styles.button}>
-                                        <FaCheck />
-                                    </button>
-                                    <button onClick={() => deleteWord(word.id)} className={styles.button}>
-                                        <FaTrash />
-                                    </button>
-                                </td>
-                            )}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
 
             <div className={styles.buttons}>
                 <button onClick={addWord} className={`${styles.button} ${styles.addButton}`}>Добавить слово</button>
@@ -110,6 +74,57 @@ function Table() {
                     </button>
                 )}
             </div>
+
+            <table className={styles.table}>
+                <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>#</th>
+                    <th>WORD</th>
+                    <th>TRANSCRIPTION</th>
+                    <th>TRANSLATION</th>
+                    {showActions && <th>Actions</th>}
+                </tr>
+                </thead>
+                <tbody>
+                {words.map((word, index) => (
+                    <tr key={word.id}>
+                        <td>
+                            <input
+                                type="checkbox"
+                                checked={word.isSelected}
+                                onChange={() => toggleSelect(word.id)}
+                            />
+                        </td>
+                        <td>{index + 1}</td>
+                        {['word', 'transcription', 'translation'].map(field => (
+                            <td key={field}>
+                                {word.isEditing ? (
+                                    <input
+                                        type="text"
+                                        value={word[field]}
+                                        onChange={(e) => handleInputChange(e, word.id, field)}
+                                        className={styles.input}
+                                    />
+                                ) : (
+                                    word[field]
+                                )}
+                            </td>
+                        ))}
+                        {showActions && (
+                            <td>
+                                <button onClick={() => toggleEdit(word.id)} className={styles.button}>
+                                    <FaCheck/>
+                                </button>
+                                <button onClick={() => deleteWord(word.id)} className={styles.button}>
+                                    <FaTrash/>
+                                </button>
+                            </td>
+                        )}
+                    </tr>
+                ))}
+                </tbody>
+            </table>
         </div>
     );
 }
