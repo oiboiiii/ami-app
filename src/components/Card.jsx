@@ -1,21 +1,24 @@
-import React from "react";
 import styles from './card.module.css';
+import { motion } from 'framer-motion';
 
-function Card() {
+function Card({ card, total, passed }) {
     return (
-        <div className={styles.card}>
-            <p className={'styles.card-number'}>1/12</p>
-            <div className={'styles.card-text-area'}>
-            <h3 className={'styles.card-word'}>Mon ami</h3>
-            <p className={'styles.card-transcription'}>[mon ami]</p>
-            <p className={'styles.card-translate'}>мой друг</p>
+        <motion.div
+            className={styles.card}
+            key={card.id}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -50 }}
+            transition={{ duration: 0.4 }}
+        >
+            <p className={styles.cardCategory}>{card.topic}</p>
+            <div className={styles.cardTextArea}>
+                <h3 className={styles.cardWord}>{card.word}</h3>
+                <p className={styles.cardTranscription}>{card.transcription}</p>
+                <p className={styles.cardTranslate}>{card.translation}</p>
             </div>
-            <div className={'styles.card-button'}>
-            <button className={'styles.card-button--known'}>знаю</button>
-            <button className={'styles.card-button--unknown'}>не знаю</button>
-            </div>
-            <p className={'styles.card-category'}>Категория</p>
-        </div>
+            <p className={styles.cardNumber}>{passed + 1}/{total}</p>
+        </motion.div>
     );
 }
 

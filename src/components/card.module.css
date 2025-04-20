@@ -1,6 +1,6 @@
 .card {
     width: 20rem;
-    height: 30rem;
+    height: 20rem;
     background: #ffdbe6;
     border: none;
     border-radius: 25px;
@@ -10,4 +10,22 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.cardCategory{
+    color: #ff5988;
+    text-transform: uppercase;
+}
+
+.cardTextArea{}
+
+.cardWord{}
+
+.cardTranscription{}
+
+.cardTranslate{}
+
+.cardNumber{
+    color: #ff5988;
+}
+
 
