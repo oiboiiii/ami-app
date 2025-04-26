@@ -1,0 +1,17 @@
+.title {
+
+}
+
+.text {
+
+
+}
+
+.restart_button {
+    border: none;
+    background-color: #ff5988;
+    color: #ffdbe6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
