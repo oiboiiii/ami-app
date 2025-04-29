@@ -24,13 +24,16 @@
     flex-flow: row;
     align-items: center;
     gap: 20px;
+
 }
 
 .header__france_logo {
     height: 55px;
+    text-decoration: none;
 }
 
 .header__title {
+    color: #ff5988;
 }
 
 .header__nav {
