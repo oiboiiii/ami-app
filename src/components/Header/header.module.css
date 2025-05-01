@@ -32,6 +32,32 @@
     text-decoration: none;
 }
 
+
+.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .cardFront, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffe0eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cardBack {
+    transform: rotateY(180deg);
+    background-color: #dceeff;
+  }
+  
+
 .header__title {
     color: #ff5988;
 }

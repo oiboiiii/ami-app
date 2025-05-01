@@ -41,7 +41,8 @@ function Game() {
                             card={data[index]}
                             total={total}
                             passed={index}
-                            onAnswer={handleAnswer}
+                            onReveal={handleAnswer}
+                            
                         />
                     ) : (
                         <Result known={knownCount} total={total} onRestart={restartTest}/>
